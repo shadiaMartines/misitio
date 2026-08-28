@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad Informática y Hardening de Sistemas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="wrap">
+            <h1>Seguridad Informática y Protección de Datos</h1>
+            <p class="subtitle">Fundamentos teóricos y prácticas de defensa en infraestructuras tecnológicas.</p>
+        </div>
+    </header>
+
+    <main class="wrap">
+        
+        <section class="content-box">
+            <h2>Introducción a la Seguridad de la Información</h2>
+            <p>La seguridad de la información abarca todas las medidas y políticas utilizadas para proteger los datos frente a accesos no autorizados, modificaciones o destrucción. Su pilar fundamental descansa sobre la tríada CIA: confidencialidad, integridad y disponibilidad, asegurando que los recursos tecnológicos operen de manera confiable tanto en entornos locales como en la nube.</p>
+        </section>
+
+        <!-- Sección de vectores de riesgo (sin imagen) -->
+        <section class="content-box">
+            <h2>Vectores de Riesgo Comunes</h2>
+            <div class="features-grid" style="margin-top: 5px;">
+                <div class="feature-card">
+                    <h3>Software Malicioso (Malware)</h3>
+                    <p>Programas diseñados para infiltrarse en los sistemas sin el consentimiento del usuario, alterando el funcionamiento del sistema operativo o comprometiendo información sensible.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Ingeniería Social</h3>
+                    <p>Técnicas de manipulación psicológica orientadas a engañar a los usuarios para que revelen credenciales de acceso, claves privadas o información confidencial.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de estrategias de mitigación (sin imagen) -->
+        <section class="content-box">
+            <h2>Estrategias de Mitigación y Buenas Prácticas</h2>
+            <ul style="margin-top: 10px;">
+                <li><strong>Control de acceso robusto:</strong> Implementación de contraseñas complejas basadas en entropía alta y sistemas de autenticación multifactor (MFA).</li>
+                <li><strong>Actualización continua:</strong> Aplicación regular de parches de seguridad para corregir vulnerabilidades conocidas en el software y firmware.</li>
+                <li><strong>Segmentación de redes:</strong> Uso de firewalls y políticas de filtrado para restringir el flujo de tráfico innecesario entre distintos segmentos de la red.</li>
+            </ul>
+        </section>
+
+        <!-- Sección técnica de configuración (sin imagen) -->
+        <section class="content-box">
+            <h2>Ejemplo de Configuración de Permisos en Linux</h2>
+            <p>Implementación básica para restringir el acceso a un directorio crítico mediante la línea de comandos:</p>
+
+            <pre class="terminal"><code># Cambiar el propietario del directorio y restringir permisos a otros usuarios
+sudo chown -R root:root /var/secure_data
+sudo chmod 700 /var/secure_data
+ls -ld /var/secure_data</code></pre>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>Documentación académica sobre Seguridad Informática y Redes.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
